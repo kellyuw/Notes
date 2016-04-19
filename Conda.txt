@@ -1,0 +1,9 @@
+1. List all conda environments: conda env list
+2. Create a new conda environment: conda create --name [new env name]
+3. Clone root conda enviornment: conda create --name [new env name] --clone root
+4. Use new conda environment: source activate [new env name]
+5. Stop using current conda environment: source deactivate
+6. Remove conda environment from system: conda-env remove -n [name of env to remove]
+7. Export current conda environment to file: conda env export > environment.yml
+8. Create conda enviornment from file: conda env create -f environment.yml
+9. Identify current conda environment: conda env list | grep '*' | awk -F " " '{print $1}'
